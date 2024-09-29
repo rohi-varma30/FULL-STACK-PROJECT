@@ -1,0 +1,25 @@
+<!-- <p>add-property works!</p> -->
+
+<div class="container">
+    <h2>Add Property</h2>
+    <form (ngSubmit)="addProperty()">
+      <div class="mb-3">
+        <label for="name" class="form-label">Property Name</label>
+        <input type="text" class="form-control" id="name" [(ngModel)]="name" name="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea class="form-control" id="description" [(ngModel)]="description" name="description" required></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="location" class="form-label">Location</label>
+        <input type="text" class="form-control" id="location" [(ngModel)]="location" name="location" required>
+      </div>
+      <div class="mb-3">
+        <label for="price" class="form-label">Price</label>
+        <input type="number" class="form-control" id="price" [(ngModel)]="price" name="price" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Add Property</button>
+    </form>
+  </div>
+  

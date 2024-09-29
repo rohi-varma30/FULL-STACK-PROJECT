@@ -1,0 +1,22 @@
+<!-- <p>booking-form works!</p> -->
+
+
+<div class="container" *ngIf="property">
+    <h2>Booking for {{ property.name }}</h2>
+    <form (ngSubmit)="bookProperty()">
+      <div class="mb-3">
+        <label for="checkIn" class="form-label">Check-in Date</label>
+        <input type="date" class="form-control" id="checkIn" [(ngModel)]="checkInDate" name="checkIn" required>
+      </div>
+      <div class="mb-3">
+        <label for="checkOut" class="form-label">Check-out Date</label>
+        <input type="date" class="form-control" id="checkOut" [(ngModel)]="checkOutDate" name="checkOut" required>
+      </div>
+      <div class="mb-3">
+        <label for="guests" class="form-label">Number of Guests</label>
+        <input type="number" class="form-control" id="guests" [(ngModel)]="numberOfGuests" name="guests" min="1" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Book Now</button>
+    </form>
+  </div>
+  

@@ -1,0 +1,10 @@
+<!-- <p>property-detail works!</p> -->
+
+<div class="container" *ngIf="property">
+    <h2>{{ property.name }}</h2>
+    <p>{{ property.description }}</p>
+    <p><strong>Location:</strong> {{ property.location }}</p>
+    <p><strong>Price:</strong> ${{ property.price }} per night</p>
+    <a [routerLink]="['/booking', property.id]" class="btn btn-success">Book Now</a>
+  </div>
+  
