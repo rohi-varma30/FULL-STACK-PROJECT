@@ -1,0 +1,15 @@
+.categories {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .nav-link {
+    color: #555;
+    font-weight: bold;
+  }
+  
+  .nav-link.active {
+    color: #000;
+    border-bottom: 2px solid black;
+  }
+  
